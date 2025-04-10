@@ -1,0 +1,15 @@
+[
+  {
+    "_id_consulta": 2,
+    "_id_paciente": "P01",
+    "_id_medico": "SP00007",
+    "_id_enfermeiro": ["E01", "E02"],
+    "data_entrada":"2005-06-02 16:00:00",
+    "previsao_alta": true,
+    "previsao_alta_data": "2005-06-03 12:00:00",
+    "data_saida":"2005-06-03 10:00:00",
+    "leito": "quarto duplo",
+    "valor_diaria": "R$200,00",
+    "descricao_internacao": ["O paciente chegou com o rosto muito inchado e com dificuldades para respirar após ser picado por um enxame de abelhas. Realizamos os procedimentos, administramos a medicação e deixamos o paciente em repouso até pela manhã, onde observamos melhora e concedemos alta. "]
+  }
+]

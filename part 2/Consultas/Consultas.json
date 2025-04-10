@@ -1,0 +1,80 @@
+[
+  {
+
+    "_id_consulta": 1,
+
+    "crm_medico": "SP00001",
+
+    "id_paciente": "P01",
+
+    "especialidade_buscada": "Clínica geral",
+
+    "data_hora": "2003-04-07 09:00:00",
+
+    "descricao": "Consulta de rotina",
+
+    "observacao": "Tudo normal",
+
+
+    "receita_medicamentos": [],
+
+    "convenio": {
+      "nome": "Amil",
+      "numero_carteira": "123456789"
+    }
+  },
+
+  {
+
+    "_id_consulta": 2,
+
+    "crm_medico": "SP00007",
+
+    "id_paciente": "P01",
+
+    "especialidade_buscada": "Dermatologia",
+
+    "data_hora": "2005-06-02 16:00:00",
+
+    "descricao": "Consulta alergica ",
+
+    "observacao": "Paciente chegou com a cara muito inchada, e com dificuldades para respirar, após ser picado por um enxame de abelhas.",
+
+
+    "receita_medicamentos": [
+
+      {
+        "nome": "Cetirizina",
+        "posologia": "A cada 12 horas"
+      },
+
+      {
+        "nome": "Loratadina",
+        "posologia": "A cada 12 horas"
+      },
+
+      {
+        "nome": "Prednisona",
+        "posologia": "1 vez ao dia, às 09:00"
+      },
+
+      {
+        "nome": "Dexametasona",
+        "posologia": "2 vezes ao dia, às 09:00 e às 21:00"
+      },
+
+      {
+        "nome": "EpiPen",
+        "posologia": "Uso sob demanda em emergências"
+      }
+
+    ],
+
+    "convenio": {
+      "nome": "Bradesco Saúde",
+      "cnpj": "23456789000122",
+      "tempo_carencia": "4 meses",
+      "numero_carteira": "567890123"
+    }
+  }
+]

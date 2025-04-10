@@ -1,0 +1,23 @@
+[
+  {
+    "_id_enfermeiro": "E01",
+
+    "nome": "Maria Lúcia",
+
+    "cpf": "5097689864",
+
+    "coren": "000001-SP"
+
+  },
+
+  {
+    "_id_enfermeiro": "E02",
+
+    "nome": "Kleber Machado",
+
+    "cpf": "1224456779",
+
+    "coren": "000002-SP"
+
+  }
+]
