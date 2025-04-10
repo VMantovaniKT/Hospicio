@@ -1,0 +1,16 @@
+[
+  {
+    "id_consulta": 1,
+    "data_hora": "2024-04-07 09:00:00",
+    "descricao": "Consulta de rotina",
+    "crm_medico": "SP00001",
+    "id_paciente": "P01",
+    "convenio":{
+      "nome": "Amil",
+      "numero_carteira": "123456789"
+    },
+    "especialidade_buscada": "Clínica geral",
+    "observacao": "Tudo normal",
+    "receita_medicamentos": []
+  }
+]

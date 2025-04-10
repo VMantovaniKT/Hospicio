@@ -1,0 +1,19 @@
+{
+  "_id": "SP00001",
+  "nome": "DR. João De Almeida",
+  "data_nascimento": "2003-06-16",
+  "especialidades": [
+    "Clínica geral"
+  ],
+  "tipo": "Generalista",
+  "horario_trabalho": "manhã das 08:00 às 12:00",
+  "contato": {
+    "telefone": "11 94566-1011",
+    "email": "jaosaude@hospital.com"
+  },
+  "status_medico": 1,
+  "documentos": {
+    "cpf": "5007699553",
+    "crm": "SP00001"
+  }
+}
