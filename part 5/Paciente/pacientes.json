@@ -1,0 +1,953 @@
+[
+  {
+
+    "_id_paciente": "P01",
+    "nome": "Alfred Júnior",
+    "data_nascimento": "1980-03-15",
+
+    "documentos":
+    {
+      "rg": "403764304",
+
+      "digito": "8",
+
+      "cpf": "7096443215",
+
+      "cartaoSus": "12345678900"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2003-04-07 09:00:00",
+    "data_ultima_alteracao": "2024-10-07 11:14:00",
+
+    "contato":{
+
+      "e-mail": "alfredjunior25@email.com",
+
+      "subcontato1": {
+        "telefone": "11 94556-5999",
+        "whatsapp": true
+      },
+
+      "subcontato2": {
+        "telefone": "11 92269-6779",
+        "whatsapp": true
+      },
+
+      "subcontato3": {
+        "telefone": "4669-4969",
+        "whatsapp": false
+      }
+    },
+
+    "endereço":{
+      "cep": "06221-175",
+      "logradouro": "Rua Santos",
+      "numero": 34,
+      "complemento": null,
+      "bairro": "Pelé",
+      "cidade": "Santos",
+      "estado": "SP"
+    },
+
+    "tipo_sanguineo": "O-",
+
+    "convenios":[
+
+      {
+        "nome": "Amil",
+        "cnpj": "98765432000111",
+        "tempo_carencia": "3 meses",
+        "numero_carteira": "123456789"
+      },
+
+      {
+        "nome": "Unimed",
+        "cnpj": "12345678000199",
+        "tempo_carencia": "6 meses",
+        "numero_carteira": "987654321"
+      },
+
+      {
+        "nome": "Bradesco Saúde",
+        "cnpj": "23456789000122",
+        "tempo_carencia": "4 meses",
+        "numero_carteira": "567890123"
+      }
+    ],
+
+    "alergias":[
+
+      {
+        "alergia": "Amendoim",
+        "observacao": "Alergia leve",
+        "reacao": "Coceira na pele, Diarreia"
+      },
+
+      {
+        "alergias": "Urticária Papular",
+        "obrservacao": "Alergia leve, pode piorar dependendo da quantidade de picadas",
+        "reacao": "Coceira na pele e vermelhidão"
+      }
+
+    ]
+  },
+
+  {
+
+    "_id_paciente": "P02",
+    "nome": "Beatriz Silva",
+    "data_nascimento": "1992-08-12",
+
+    "documentos": {
+      "rg": "503764305",
+      "digito": "5",
+      "cpf": "12345678901",
+      "cartaoSus": "11122233344"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2015-06-23 08:00:00",
+    "data_ultima_alteracao": "2025-01-05 14:27:00",
+
+    "contato": {
+      "e-mail": "beatrizsilva@email.com",
+      "subcontato1": {
+        "telefone": "12 98765-4321",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "12 91234-5678",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "1234-5678",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "07022-180",
+      "logradouro": "Av. Brasil",
+      "numero": 101,
+      "complemento": "Apartamento 15",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+
+    "tipo_sanguineo": "A+",
+
+    "convenios": [
+      {
+        "nome": "Bradesco Saúde",
+        "cnpj": "11122233344455",
+        "tempo_carencia": "2 meses",
+        "numero_carteira": "123987654"
+      },
+
+      {
+        "nome": "Porto Seguro Saúde",
+        "cnpj": "22233344455566",
+        "tempo_carencia": "4 meses",
+        "numero_carteira": "456123789"
+      }
+
+    ]
+  },
+
+  {
+
+    "_id_paciente": "P03",
+    "nome": "Carlos Andrade",
+    "data_nascimento": "1985-02-20",
+
+    "documentos": {
+      "rg": "607812903",
+      "digito": "9",
+      "cpf": "56789012345",
+      "cartaoSus": "22233344455"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2020-08-11 10:00:00",
+    "data_ultima_alteracao": "2025-03-03 16:12:00",
+
+    "contato": {
+      "e-mail": "carlosandrade@email.com",
+      "subcontato1": {
+        "telefone": "11 98876-5432",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "11 92345-6789",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "1123-4567",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "04567-890",
+      "logradouro": "Rua das Flores",
+      "numero": 123,
+      "complemento": null,
+      "bairro": "Jardim Primavera",
+      "cidade": "Campinas",
+      "estado": "SP"
+    },
+
+    "tipo_sanguineo": "AB+",
+
+    "convenios": [
+      {
+        "nome": "Amil",
+        "cnpj": "98765432111234",
+        "tempo_carencia": "3 meses",
+        "numero_carteira": "987654321"
+      },
+
+      {
+        "nome": "Unimed",
+        "cnpj": "56789012345678",
+        "tempo_carencia": "6 meses",
+        "numero_carteira": "123456789"
+      }
+
+    ]
+  },
+
+  {
+    "_id_paciente": "P04",
+    "nome": "Daniel Costa",
+    "data_nascimento": "1979-11-23",
+
+    "documentos": {
+      "rg": "802345678",
+      "digito": "6",
+      "cpf": "23456789012",
+      "cartaoSus": "33344455566"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2005-03-18 15:20:00",
+    "data_ultima_alteracao": "2025-02-21 09:35:00",
+
+    "contato": {
+      "e-mail": "danielcosta@email.com",
+      "subcontato1": {
+        "telefone": "21 99876-5432",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "21 92345-6789",
+        "whatsapp": false
+      },
+      "subcontato3": {
+        "telefone": "2199-8765",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "20090-001",
+      "logradouro": "Rua do Comércio",
+      "numero": 54,
+      "complemento": null,
+      "bairro": "Centro",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+
+    "tipo_sanguineo": "B+",
+
+    "convenios": [
+      {
+        "nome": "SulAmérica Saúde",
+        "cnpj": "33445566778899",
+        "tempo_carencia": "1 mês",
+        "numero_carteira": "890123456"
+      },
+
+      {
+        "nome": "Golden Cross",
+        "cnpj": "44556677889900",
+        "tempo_carencia": "5 meses",
+        "numero_carteira": "567890123"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P05",
+    "nome": "Eduarda Lima",
+    "data_nascimento": "1988-05-10",
+
+    "documentos": {
+      "rg": "102345678",
+      "digito": "2",
+      "cpf": "34567890123",
+      "cartaoSus": "44455566677"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2010-09-14 08:30:00",
+    "data_ultima_alteracao": "2025-01-28 18:40:00",
+
+    "contato": {
+      "e-mail": "eduardalima@email.com",
+      "subcontato1": {
+        "telefone": "31 98765-4321",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "31 91234-5678",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "3198-7654",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "30140-010",
+      "logradouro": "Av. Afonso Pena",
+      "numero": 300,
+      "complemento": "Loja 5",
+      "bairro": "Savassi",
+      "cidade": "Belo Horizonte",
+      "estado": "MG"
+    },
+
+    "tipo_sanguineo": "O+",
+
+    "convenios": [
+      {
+        "nome": "Amil",
+        "cnpj": "56789012345678",
+        "tempo_carencia": "4 meses",
+        "numero_carteira": "345678901"
+      },
+
+      {
+        "nome": "Unimed",
+        "cnpj": "12345678000199",
+        "tempo_carencia": "2 meses",
+        "numero_carteira": "123456789"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P06",
+    "nome": "Fernanda Almeida",
+    "data_nascimento": "1993-02-07",
+
+    "documentos": {
+      "rg": "703764304",
+      "digito": "8",
+      "cpf": "6096443215",
+      "cartaoSus": "22345678900"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2015-06-23 14:20:00",
+    "data_ultima_alteracao": "2023-09-01 13:14:00",
+
+    "contato": {
+      "e-mail": "fernandaalmeida@email.com",
+      "subcontato1": {
+        "telefone": "21 99756-5999",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "21 92269-6779",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "2286-4969",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "06221-200",
+      "logradouro": "Rua Luiz Carlos",
+      "numero": 44,
+      "complemento": null,
+      "bairro": "Maracanã",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+
+    "tipo_sanguineo": "O-",
+
+    "convenios": [
+      {
+        "nome": "Sulamérica Saúde",
+        "cnpj": "96765432000111",
+        "tempo_carencia": "8 meses",
+        "numero_carteira": "123456789"
+      },
+
+      {
+        "nome": "Golden Saúde",
+        "cnpj": "12365478000199",
+        "tempo_carencia": "6 meses",
+        "numero_carteira": "987654321"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P07",
+    "nome": "Gabriel Santos",
+    "data_nascimento": "1982-10-14",
+
+    "documentos": {
+      "rg": "402764309",
+      "digito": "2",
+      "cpf": "3096443215",
+      "cartaoSus": "44345678900"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2012-04-10 12:45:00",
+    "data_ultima_alteracao": "2024-11-03 10:23:00",
+
+    "contato": {
+      "e-mail": "gabrielsantos@email.com",
+      "subcontato1": {
+        "telefone": "21 98576-5910",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "21 93169-6730",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "2266-4968",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "06721-123",
+      "logradouro": "Av. São João",
+      "numero": 125,
+      "complemento": null,
+      "bairro": "Centro",
+      "cidade": "Niterói",
+      "estado": "RJ"
+    },
+
+    "tipo_sanguineo": "A-",
+
+    "convenios": [
+      {
+        "nome": "Bradesco Saúde",
+        "cnpj": "22365432100188",
+        "tempo_carencia": "4 meses",
+        "numero_carteira": "123456780"
+      },
+
+      {
+        "nome": "Amil",
+        "cnpj": "12365478000188",
+        "tempo_carencia": "6 meses",
+        "numero_carteira": "987654320"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P08",
+    "nome": "Helena Ferreira",
+    "data_nascimento": "1990-07-22",
+
+    "documentos": {
+      "rg": "501234567",
+      "digito": "7",
+      "cpf": "12098765432",
+      "cartaoSus": "55432167890"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2018-11-15 09:20:00",
+    "data_ultima_alteracao": "2025-02-07 15:50:00",
+
+    "contato": {
+      "e-mail": "helenafereira@email.com",
+      "subcontato1": {
+        "telefone": "11 98123-4567",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "11 91456-7890",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "1123-0987",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "12345-678",
+      "logradouro": "Rua das Acácias",
+      "numero": 88,
+      "complemento": "Bloco B",
+      "bairro": "Morumbi",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+
+    "tipo_sanguineo": "AB-",
+
+    "convenios": [
+      {
+        "nome": "Unimed",
+        "cnpj": "98765432110188",
+        "tempo_carencia": "5 meses",
+        "numero_carteira": "876543210"
+      },
+
+      {
+        "nome": "Amil",
+        "cnpj": "22345678901199",
+        "tempo_carencia": "3 meses",
+        "numero_carteira": "345678901"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P09",
+    "nome": "Isabela Oliveira",
+    "data_nascimento": "1975-03-30",
+
+    "documentos": {
+      "rg": "706543210",
+      "digito": "4",
+      "cpf": "43210987654",
+      "cartaoSus": "66543218900"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2008-08-20 11:15:00",
+    "data_ultima_alteracao": "2024-12-03 08:45:00",
+
+    "contato": {
+      "e-mail": "isabelaoliveira@email.com",
+      "subcontato1": {
+        "telefone": "31 98654-3210",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "31 92109-8765",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "3199-5432",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "13098-123",
+      "logradouro": "Av. Brasil",
+      "numero": 78,
+      "complemento": "Sala 12",
+      "bairro": "Boa Vista",
+      "cidade": "Campinas",
+      "estado": "SP"
+    },
+
+    "tipo_sanguineo": "O+",
+
+    "convenios": [
+      {
+        "nome": "Amil",
+        "cnpj": "56789012345699",
+        "tempo_carencia": "2 meses",
+        "numero_carteira": "543210987"
+      },
+
+      {
+        "nome": "SulAmérica Saúde",
+        "cnpj": "33445566778899",
+        "tempo_carencia": "4 meses",
+        "numero_carteira": "876543210"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P10",
+    "nome": "João Pereira",
+    "data_nascimento": "1989-04-25",
+
+    "documentos": {
+      "rg": "809654312",
+      "digito": "3",
+      "cpf": "65432109876",
+      "cartaoSus": "77654321000"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2015-01-30 10:35:00",
+    "data_ultima_alteracao": "2025-03-12 09:40:00",
+
+    "contato": {
+      "e-mail": "joaopereira@email.com",
+      "subcontato1": {
+        "telefone": "11 97654-3210",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "11 94567-8901",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "1198-6543",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "04576-890",
+      "logradouro": "Rua Primavera",
+      "numero": 90,
+      "complemento": "Casa 2",
+      "bairro": "Vila Nova",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+
+    "tipo_sanguineo": "B-",
+
+    "convenios": [
+      {
+        "nome": "Golden Cross",
+        "cnpj": "77889900112233",
+        "tempo_carencia": "3 meses",
+        "numero_carteira": "543210987"
+      },
+
+      {
+        "nome": "Bradesco Saúde",
+        "cnpj": "33445566778899",
+        "tempo_carencia": "5 meses",
+        "numero_carteira": "123456780"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P11",
+    "nome": "Larissa Carvalho",
+    "data_nascimento": "1995-09-18",
+
+    "documentos": {
+      "rg": "904567321",
+      "digito": "7",
+      "cpf": "78901234567",
+      "cartaoSus": "88901234500"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2020-07-12 15:50:00",
+    "data_ultima_alteracao": "2024-10-28 11:25:00",
+
+    "contato": {
+      "e-mail": "larissacarvalho@email.com",
+      "subcontato1": {
+        "telefone": "21 98321-4567",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "21 93782-1098",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "2132-4567",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "22410-123",
+      "logradouro": "Av. Atlântica",
+      "numero": 203,
+      "complemento": "Cobertura",
+      "bairro": "Copacabana",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+
+    "tipo_sanguineo": "AB+",
+
+    "convenios": [
+      {
+        "nome": "Unimed",
+        "cnpj": "11223344556677",
+        "tempo_carencia": "4 meses",
+        "numero_carteira": "123987654"
+      },
+
+      {
+        "nome": "Amil",
+        "cnpj": "22345678901199",
+        "tempo_carencia": "6 meses",
+        "numero_carteira": "345678901"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P12",
+    "nome": "Marcos Souza",
+    "data_nascimento": "1978-06-07",
+
+    "documentos": {
+      "rg": "108765432",
+      "digito": "5",
+      "cpf": "56789012345",
+      "cartaoSus": "99012345600"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2006-03-14 09:25:00",
+    "data_ultima_alteracao": "2024-12-01 16:40:00",
+
+    "contato": {
+      "e-mail": "marcossouza@email.com",
+      "subcontato1": {
+        "telefone": "31 98109-5432",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "31 93210-9876",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "3190-1234",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "31000-120",
+      "logradouro": "Rua Bela Vista",
+      "numero": 70,
+      "complemento": null,
+      "bairro": "Floresta",
+      "cidade": "Belo Horizonte",
+      "estado": "MG"
+    },
+
+    "tipo_sanguineo": "O-",
+
+    "convenios": [
+      {
+        "nome": "SulAmérica Saúde",
+        "cnpj": "44556677889900",
+        "tempo_carencia": "2 meses",
+        "numero_carteira": "456123789"
+      },
+
+      {
+        "nome": "Golden Cross",
+        "cnpj": "33445566778899",
+        "tempo_carencia": "4 meses",
+        "numero_carteira": "789456123"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P13",
+    "nome": "Camila Oliveira",
+    "data_nascimento": "1990-03-01",
+
+    "documentos": {
+      "rg": "406789123",
+      "digito": "9",
+      "cpf": "89012345678",
+      "cartaoSus": "12345678901"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2010-05-22 10:10:00",
+    "data_ultima_alteracao": "2025-02-15 13:45:00",
+
+    "contato": {
+      "e-mail": "camilaoliveira@email.com",
+      "subcontato1": {
+        "telefone": "21 98765-4321",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "21 91432-5678",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "2198-7654",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "20040-123",
+      "logradouro": "Av. Presidente Vargas",
+      "numero": 112,
+      "complemento": "Sala 18",
+      "bairro": "Centro",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+
+    "tipo_sanguineo": "B+",
+
+    "convenios": [
+      {
+        "nome": "Amil",
+        "cnpj": "33445566778899",
+        "tempo_carencia": "3 meses",
+        "numero_carteira": "345678901"
+      },
+
+      {
+        "nome": "Unimed",
+        "cnpj": "22345678901199",
+        "tempo_carencia": "5 meses",
+        "numero_carteira": "456789012"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P14",
+    "nome": "Renato Martins",
+    "data_nascimento": "1981-12-10",
+
+    "documentos": {
+      "rg": "105678345",
+      "digito": "6",
+      "cpf": "23456789012",
+      "cartaoSus": "45678901234"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2016-09-05 12:50:00",
+    "data_ultima_alteracao": "2025-01-21 18:30:00",
+
+    "contato": {
+      "e-mail": "renatomartins@email.com",
+      "subcontato1": {
+        "telefone": "31 98654-7890",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "31 94321-0987",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "3190-6543",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "38010-120",
+      "logradouro": "Av. João Naves de Ávila",
+      "numero": 123,
+      "complemento": null,
+      "bairro": "Santa Mônica",
+      "cidade": "Uberlândia",
+      "estado": "MG"
+    },
+
+    "tipo_sanguineo": "O-",
+
+    "convenios": [
+      {
+        "nome": "SulAmérica Saúde",
+        "cnpj": "33445566778899",
+        "tempo_carencia": "3 meses",
+        "numero_carteira": "123456789"
+      },
+
+      {
+        "nome": "Golden Cross",
+        "cnpj": "44556677889900",
+        "tempo_carencia": "5 meses",
+        "numero_carteira": "456789012"
+      }
+    ]
+  },
+
+  {
+    "_id_paciente": "P15",
+    "nome": "Tatiana Mendes",
+    "data_nascimento": "1985-11-12",
+
+    "documentos": {
+      "rg": "203567891",
+      "digito": "8",
+      "cpf": "98765432109",
+      "cartaoSus": "56789012345"
+    },
+
+    "status_paciente": "1",
+    "data_cadastro": "2014-02-17 14:00:00",
+    "data_ultima_alteracao": "2025-04-08 09:00:00",
+
+    "contato": {
+      "e-mail": "tatianamendes@email.com",
+      "subcontato1": {
+        "telefone": "21 94567-3210",
+        "whatsapp": true
+      },
+      "subcontato2": {
+        "telefone": "21 92310-9876",
+        "whatsapp": true
+      },
+      "subcontato3": {
+        "telefone": "2134-5678",
+        "whatsapp": false
+      }
+    },
+
+    "endereço": {
+      "cep": "22041-001",
+      "logradouro": "Rua Barata Ribeiro",
+      "numero": 250,
+      "complemento": "Cobertura",
+      "bairro": "Copacabana",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+
+    "tipo_sanguineo": "A+",
+
+    "convenios": [
+      {
+        "nome": "Unimed",
+        "cnpj": "11223344556677",
+        "tempo_carencia": "2 meses",
+        "numero_carteira": "567890123"
+      },
+
+      {
+        "nome": "Amil",
+        "cnpj": "22334455667788",
+        "tempo_carencia": "4 meses",
+        "numero_carteira": "123456789"
+      }
+    ]
+  }
+]

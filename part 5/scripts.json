@@ -1,0 +1,490 @@
+{
+  "scripts": [
+    {
+      "script1": {
+        "description": "Retorna todos os dados e o valor médio das consultas do ano de 2020 e das que foram feitas sob convênio.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$match": {
+                "$or": [
+                  {
+                    "data_hora": {
+                      "$regex": "^2020"
+                    }
+                  },
+                  {
+                    "convenio.nome": {
+                      "$exists": true
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "$group": {
+                "_id": null,
+                "dados_consultas": {
+                  "$push": "$$ROOT"
+                },
+                "valor_medio_consultas": {
+                  "$avg": "$valor"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "script2": {
+        "description": "Retorna todos os dados das internações cuja data de alta foi maior que a data prevista para a alta.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$match": {
+                "previsao_alta": true,
+                "data_saida": {
+                  "$gt": "$previsao_alta_data"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "script3": {
+        "description": "Retorna o receituário completo da primeira consulta registrada com receituário associado.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$match": {
+                "receita_medicamentos": {
+                  "$exists": true,
+                  "$ne": []
+                }
+              }
+            },
+            {
+              "$sort": {
+                "data_entrada": 1
+              }
+            },
+            {
+              "$limit": 1
+            },
+            {
+              "$project": {
+                "_id_consulta": {
+                  "$toString": "$_id_consulta"
+                },
+                "receita_medicamentos": "$receita_medicamentos",
+                "data_entrada": "$data_entrada"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "script4": {
+        "description": "Retorna todos os dados da consulta de maior valor e da consulta de menor valor, excluindo as consultas realizadas sob convênio.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$match": {
+                "convenio": {
+                  "$exists": false
+                }
+              }
+            },
+            {
+              "$facet": {
+                "consulta_maior_valor": [
+                  {
+                    "$sort": {
+                      "valor": -1
+                    }
+                  },
+                  {
+                    "$limit": 1
+                  }
+                ],
+                "consulta_menor_valor": [
+                  {
+                    "$sort": {
+                      "valor": 1
+                    }
+                  },
+                  {
+                    "$limit": 1
+                  }
+                ]
+              }
+            },
+            {
+              "$project": {
+                "consulta_maior_valor": {
+                  "$arrayElemAt": [
+                    "$consulta_maior_valor",
+                    0
+                  ]
+                },
+                "consulta_menor_valor": {
+                  "$arrayElemAt": [
+                    "$consulta_menor_valor",
+                    0
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "script_internacoes": {
+        "description": "Calcula o total da internação para cada registro, baseado no valor da diária e na quantidade de dias entre entrada e saída.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$addFields": {
+                "data_entrada_parsed": {
+                  "$dateFromString": {
+                    "dateString": "$data_entrada",
+                    "format": "%Y-%m-%d %H:%M:%S"
+                  }
+                },
+                "data_saida_parsed": {
+                  "$dateFromString": {
+                    "dateString": "$data_saida",
+                    "format": "%Y-%m-%d %H:%M:%S"
+                  }
+                }
+              }
+            },
+            {
+              "$addFields": {
+                "dias_internado": {
+                  "$dateDiff": {
+                    "startDate": "$data_entrada_parsed",
+                    "endDate": "$data_saida_parsed",
+                    "unit": "day"
+                  }
+                },
+                "valor_diaria_numero": {
+                  "$toDouble": {
+                    "$replaceAll": {
+                      "input": "$valor_diaria",
+                      "find": "R$",
+                      "replacement": ""
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "$addFields": {
+                "total_internacao": {
+                  "$multiply": ["$dias_internado", "$valor_diaria_numero"]
+                }
+              }
+            },
+            {
+              "$project": {
+                "_id_internacao": 1,
+                "leito": 1,
+                "dias_internado": 1,
+                "valor_diaria": 1,
+                "total_internacao": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+
+
+    {
+      "script_apartamentos": {
+        "description": "Retorna a data, procedimento e número de quarto das internações em quartos do tipo 'apartamento'.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$match": {
+                "leito": "apartamento"
+              }
+            },
+            {
+              "$project": {
+                "_id_internacao": 1,
+                "data_entrada": 1,
+                "data_saida": 1,
+                "descricao_internacao": 1,
+                "leito": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "script_menores_18": {
+        "description": "Retorna o nome do paciente, data da consulta e especialidade de todas as consultas realizadas com pacientes menores de 18 anos na data da consulta e cuja especialidade não seja 'pediatria', ordenadas por data.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$lookup": {
+                "from": "pacientes",
+                "localField": "_id_paciente",
+                "foreignField": "_id_paciente",
+                "as": "dados_paciente"
+              }
+            },
+            {
+              "$unwind": "$dados_paciente"
+            },
+            {
+              "$addFields": {
+                "data_consulta_parsed": {
+                  "$dateFromString": {
+                    "dateString": "$data_hora",
+                    "format": "%Y-%m-%d %H:%M:%S"
+                  }
+                },
+                "data_nascimento_parsed": {
+                  "$dateFromString": {
+                    "dateString": "$dados_paciente.data_nascimento",
+                    "format": "%Y-%m-%d"
+                  }
+                }
+              }
+            },
+            {
+              "$addFields": {
+                "idade_na_consulta": {
+                  "$dateDiff": {
+                    "startDate": "$data_nascimento_parsed",
+                    "endDate": "$data_consulta_parsed",
+                    "unit": "year"
+                  }
+                }
+              }
+            },
+            {
+              "$match": {
+                "idade_na_consulta": {
+                  "$lt": 18
+                },
+                "especialidade": {
+                  "$ne": "pediatria"
+                }
+              }
+            },
+            {
+              "$project": {
+                "nome_paciente": "$dados_paciente.nome",
+                "data_consulta": "$data_hora",
+                "especialidade": "$especialidade"
+              }
+            },
+            {
+              "$sort": {
+                "data_consulta": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "script_gastro_enfermaria": {
+        "description": "Retorna o nome do paciente, nome do médico, data da internação e procedimentos das internações realizadas por médicos da especialidade 'gastroenterologia' em leitos do tipo 'enfermaria'.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$lookup": {
+                "from": "medicos",
+                "localField": "_id_medico",
+                "foreignField": "_id_medico",
+                "as": "dados_medico"
+              }
+            },
+            {
+              "$unwind": "$dados_medico"
+            },
+            {
+              "$match": {
+                "dados_medico.especialidades": "Gastroenterologia",
+                "leito": "enfermaria"
+              }
+            },
+            {
+              "$lookup": {
+                "from": "pacientes",
+                "localField": "_id_paciente",
+                "foreignField": "_id_paciente",
+                "as": "dados_paciente"
+              }
+            },
+            {
+              "$unwind": "$dados_paciente"
+            },
+            {
+              "$project": {
+                "nome_paciente": "$dados_paciente.nome",
+                "nome_medico": "$dados_medico.nome",
+                "data_internacao": "$data_entrada",
+                "procedimentos": "$descricao_internacao"
+              }
+            },
+            {
+              "$sort": {
+                "data_internacao": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "script_medico_consultas": {
+        "description": "Retorna os nomes dos médicos, seus CRMs e a quantidade de consultas realizadas por cada um.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$group": {
+                "_id": "$_id_medico",
+                "quantidade_consultas": {
+                  "$sum": 1
+                }
+              }
+            },
+            {
+              "$lookup": {
+                "from": "medicos",
+                "localField": "_id",
+                "foreignField": "_id_medico",
+                "as": "dados_medico"
+              }
+            },
+            {
+              "$unwind": "$dados_medico"
+            },
+            {
+              "$project": {
+                "nome_medico": "$dados_medico.nome",
+                "crm": "$dados_medico.documentos.crm",
+                "quantidade_consultas": "$quantidade_consultas"
+              }
+            },
+            {
+              "$sort": {
+                "quantidade_consultas": -1
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "script_medicos_gabriel": {
+        "description": "Retorna todos os médicos cujo nome contém 'Gabriel'.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$match": {
+                "nome": {
+                  "$regex": "Gabriel",
+                  "$options": "i"
+                }
+              }
+            },
+            {
+              "$project": {
+                "_id_medico": 1,
+                "nome": 1,
+                "especialidades": 1,
+                "documentos.crm": 1
+              }
+            },
+            {
+              "$sort": {
+                "nome": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "script_enfermeiros_internacoes": {
+        "description": "Retorna os nomes, CORENs e o número de internações dos enfermeiros que participaram de mais de uma internação.",
+        "query": {
+          "operation": "aggregate",
+          "pipeline": [
+            {
+              "$unwind": "$_id_enfermeiro"
+            },
+            {
+              "$group": {
+                "_id": "$_id_enfermeiro",
+                "numero_internacoes": {
+                  "$sum": 1
+                }
+              }
+            },
+            {
+              "$match": {
+                "numero_internacoes": {
+                  "$gt": 1
+                }
+              }
+            },
+            {
+              "$lookup": {
+                "from": "enfermeiros",
+                "localField": "_id",
+                "foreignField": "_id_enfermeiro",
+                "as": "dados_enfermeiro"
+              }
+            },
+            {
+              "$unwind": "$dados_enfermeiro"
+            },
+            {
+              "$project": {
+                "nome_enfermeiro": "$dados_enfermeiro.nome",
+                "coren": "$dados_enfermeiro.coren",
+                "numero_internacoes": 1
+              }
+            },
+            {
+              "$sort": {
+                "numero_internacoes": -1
+              }
+            }
+          ]
+        }
+      }
+    }
+
+  ]
+}

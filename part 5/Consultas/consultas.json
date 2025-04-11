@@ -1,0 +1,545 @@
+[
+  {
+
+    "_id_consulta": 1,
+
+    "crm_medico": "SP00001",
+
+    "id_paciente": "P01",
+
+    "especialidade_buscada": "Clínica geral",
+
+    "data_hora": "2003-04-07 09:00:00",
+
+    "descricao": "Consulta de rotina",
+
+    "observacao": "Tudo normal",
+
+
+    "receita_medicamentos": [],
+
+    "convenio": {
+      "nome": "Amil",
+      "numero_carteira": "123456789"
+    }
+  },
+
+  {
+
+    "_id_consulta": 2,
+
+    "crm_medico": "SP00007",
+
+    "id_paciente": "P01",
+
+    "especialidade_buscada": "Dermatologia",
+
+    "data_hora": "2005-06-02 16:00:00",
+
+    "descricao": "Consulta alergica ",
+
+    "observacao": "Paciente chegou com a cara muito inchada, e com dificuldades para respirar, após ser picado por um enxame de abelhas.",
+
+
+    "receita_medicamentos": [
+
+      {
+        "nome": "Cetirizina",
+        "posologia": "A cada 12 horas"
+      },
+
+      {
+        "nome": "Loratadina",
+        "posologia": "A cada 12 horas"
+      },
+
+      {
+        "nome": "Prednisona",
+        "posologia": "1 vez ao dia, às 09:00"
+      },
+
+      {
+        "nome": "Dexametasona",
+        "posologia": "2 vezes ao dia, às 09:00 e às 21:00"
+      },
+
+      {
+        "nome": "EpiPen",
+        "posologia": "Uso sob demanda em emergências"
+      }
+
+    ],
+
+    "convenio": {
+      "nome": "Bradesco Saúde",
+      "cnpj": "23456789000122",
+      "tempo_carencia": "4 meses",
+      "numero_carteira": "567890123"
+    }
+  },
+
+  {
+    "_id_consulta": 3,
+    "crm_medico": "SP00007",
+    "id_paciente": "P04",
+    "especialidade_buscada": "Gastroenterologia",
+    "data_hora": "2019-03-05 09:00:00",
+    "descricao": "Consulta para tratamento de gastrite crônica.",
+    "observacao": "Paciente relata dores abdominais intensas após refeições.",
+    "receita_medicamentos": [
+      {
+        "nome": "Omeprazol",
+        "posologia": "Uma vez ao dia, em jejum"
+      },
+      {
+        "nome": "Domperidona",
+        "posologia": "Antes das refeições, 3 vezes ao dia"
+      }
+    ],
+    "convenio": {
+      "nome": "SulAmérica Saúde",
+      "cnpj": "33445566778899",
+      "tempo_carencia": "1 mês",
+      "numero_carteira": "890123456"
+    }
+  },
+
+  {
+    "_id_consulta": 4,
+    "crm_medico": "SP00008",
+    "id_paciente": "P05",
+    "especialidade_buscada": "Pediatria",
+    "data_hora": "2021-02-14 14:00:00",
+    "descricao": "Consulta para tratar quadro de otite infantil.",
+    "observacao": "Paciente apresentava dor severa no ouvido direito, acompanhado de febre baixa.",
+    "receita_medicamentos": [
+      {
+        "nome": "Amoxicilina",
+        "posologia": "A cada 8 horas por 7 dias"
+      },
+      {
+        "nome": "Ibuprofeno",
+        "posologia": "10 ml a cada 6 horas, se houver dor"
+      }
+    ],
+    "convenio": {
+      "nome": "Amil",
+      "cnpj": "56789012345678",
+      "tempo_carencia": "4 meses",
+      "numero_carteira": "345678901"
+    }
+  },
+  {
+    "_id_consulta": 5,
+    "crm_medico": "SP00012",
+    "id_paciente": "P06",
+    "especialidade_buscada": "Gastroenterologia",
+    "data_hora": "2016-09-23 09:30:00",
+    "descricao": "Tratamento de refluxo gástrico com complicações.",
+    "observacao": "Paciente reporta azia constante, regurgitação e perda de apetite.",
+    "receita_medicamentos": [
+      {
+        "nome": "Lansoprazol",
+        "posologia": "30 mg ao dia, antes do café da manhã"
+      }
+    ],
+    "convenio": {
+      "nome": "SulAmérica Saúde",
+      "cnpj": "96765432000111",
+      "tempo_carencia": "8 meses",
+      "numero_carteira": "123456789"
+    }
+  },
+  {
+    "_id_consulta": 6,
+    "crm_medico": "SP00007",
+    "id_paciente": "P07",
+    "especialidade_buscada": "Dermatologia",
+    "data_hora": "2017-11-08 11:00:00",
+    "descricao": "Consulta para diagnóstico de dermatite de contato severa.",
+    "observacao": "Paciente apresentou lesões avermelhadas e prurido intenso após exposição a produto químico industrial.",
+    "receita_medicamentos": [
+      {
+        "nome": "Dexametasona",
+        "posologia": "2 vezes ao dia por 7 dias"
+      },
+      {
+        "nome": "Cetirizina",
+        "posologia": "1 comprimido ao dia, antes de dormir"
+      }
+    ],
+    "convenio": {
+      "nome": "Bradesco Saúde",
+      "cnpj": "22365432100188",
+      "tempo_carencia": "4 meses",
+      "numero_carteira": "123456780"
+    }
+  },
+
+  {
+    "_id_consulta": 7,
+    "crm_medico": "SP00011",
+    "id_paciente": "P08",
+    "especialidade_buscada": "Dermatologia",
+    "data_hora": "2020-08-18 13:45:00",
+    "descricao": "Consulta para tratamento de acne cística severa.",
+    "observacao": "Paciente apresenta cicatrizes recentes e surtos ativos. Histórico de resistência a tratamentos tópicos.",
+    "receita_medicamentos": [
+      {
+        "nome": "Isotretinoína",
+        "posologia": "1 comprimido ao dia, durante o almoço"
+      }
+    ],
+    "convenio": {
+      "nome": "Unimed",
+      "cnpj": "98765432110188",
+      "tempo_carencia": "5 meses",
+      "numero_carteira": "876543210"
+    }
+  },
+  {
+    "_id_consulta": 8,
+    "crm_medico": "SP00006",
+    "id_paciente": "P09",
+    "especialidade_buscada": "Pediatria",
+    "data_hora": "2019-04-12 10:30:00",
+    "descricao": "Consulta para diagnóstico de asma brônquica em adolescente.",
+    "observacao": "Paciente apresenta dispneia durante exercícios e histórico familiar de doenças respiratórias.",
+    "receita_medicamentos": [
+      {
+        "nome": "Salbutamol",
+        "posologia": "2 inalações sob demanda, até 3 vezes ao dia"
+      },
+      {
+        "nome": "Budesonida",
+        "posologia": "1 aplicação nasal, 2 vezes ao dia"
+      }
+    ],
+    "convenio": {
+      "nome": "Amil",
+      "cnpj": "56789012345699",
+      "tempo_carencia": "2 meses",
+      "numero_carteira": "543210987"
+    }
+  },
+  {
+    "_id_consulta": 9,
+    "crm_medico": "SP00003",
+    "id_paciente": "P10",
+    "especialidade_buscada": "Gastroenterologia",
+    "data_hora": "2021-07-25 14:15:00",
+    "descricao": "Consulta para investigação de intolerância alimentar.",
+    "observacao": "Paciente relata dores abdominais após consumo de produtos lácteos e derivados.",
+    "receita_medicamentos": [
+      {
+        "nome": "Enzima Lactase",
+        "posologia": "1 comprimido antes de consumir alimentos com lactose"
+      }
+    ],
+    "convenio": {
+      "nome": "Golden Cross",
+      "cnpj": "77889900112233",
+      "tempo_carencia": "3 meses",
+      "numero_carteira": "543210987"
+    }
+  },
+
+  {
+    "_id_consulta": 10,
+    "crm_medico": "SP00005",
+    "id_paciente": "P11",
+    "especialidade_buscada": "Clínica geral",
+    "data_hora": "2017-03-14 09:30:00",
+    "descricao": "Consulta para avaliação de hipertensão arterial.",
+    "observacao": "Paciente apresentou pressão arterial elevada em várias medições consecutivas. Relata dores de cabeça frequentes.",
+    "receita_medicamentos": [
+      {
+        "nome": "Losartana",
+        "posologia": "50 mg pela manhã"
+      },
+      {
+        "nome": "Hidroclorotiazida",
+        "posologia": "25 mg ao dia, junto com o café da manhã"
+      }
+    ],
+    "convenio": {
+      "nome": "Unimed",
+      "cnpj": "11223344556677",
+      "tempo_carencia": "4 meses",
+      "numero_carteira": "123987654"
+    }
+  },
+  {
+    "_id_consulta": 11,
+    "crm_medico": "SP00012",
+    "id_paciente": "P12",
+    "especialidade_buscada": "Gastroenterologia",
+    "data_hora": "2018-11-10 15:00:00",
+    "descricao": "Consulta para tratamento de úlcera gástrica.",
+    "observacao": "Paciente relata dor intensa no estômago e náuseas. Histórico de uso prolongado de anti-inflamatórios.",
+    "receita_medicamentos": [
+      {
+        "nome": "Esomeprazol",
+        "posologia": "Uma vez ao dia, 30 minutos antes do café"
+      }
+    ],
+    "convenio": {
+      "nome": "SulAmérica Saúde",
+      "cnpj": "44556677889900",
+      "tempo_carencia": "2 meses",
+      "numero_carteira": "456123789"
+    }
+  },
+  {
+    "_id_consulta": 12,
+    "crm_medico": "SP00010",
+    "id_paciente": "P13",
+    "especialidade_buscada": "Pediatria",
+    "data_hora": "2019-02-18 10:00:00",
+    "descricao": "Consulta para tratamento de infecção de garganta em criança.",
+    "observacao": "Paciente apresenta febre alta e dificuldade para engolir alimentos sólidos.",
+    "receita_medicamentos": [
+      {
+        "nome": "Amoxicilina + Clavulanato",
+        "posologia": "A cada 12 horas por 10 dias"
+      },
+      {
+        "nome": "Dipirona",
+        "posologia": "15 gotas a cada 6 horas, se febre acima de 37,8°C"
+      }
+    ],
+    "convenio": {
+      "nome": "Amil",
+      "cnpj": "22345678901199",
+      "tempo_carencia": "6 meses",
+      "numero_carteira": "345678901"
+    }
+  },
+
+  {
+    "_id_consulta": 13,
+    "crm_medico": "SP00007",
+    "id_paciente": "P14",
+    "especialidade_buscada": "Dermatologia",
+    "data_hora": "2020-12-05 15:45:00",
+    "descricao": "Consulta para tratamento de psoríase em placas.",
+    "observacao": "Paciente apresenta lesões escamosas em cotovelos e joelhos, com episódios recorrentes.",
+    "receita_medicamentos": [
+      {
+        "nome": "Calcipotriol + Betametasona",
+        "posologia": "Aplicar nas áreas afetadas, 2 vezes ao dia"
+      },
+      {
+        "nome": "Hidratante corporal",
+        "posologia": "Aplicar 3 vezes ao dia"
+      }
+    ],
+    "convenio": {
+      "nome": "SulAmérica Saúde",
+      "cnpj": "33445566778899",
+      "tempo_carencia": "3 meses",
+      "numero_carteira": "123456789"
+    }
+  },
+  {
+    "_id_consulta": 14,
+    "crm_medico": "SP00005",
+    "id_paciente": "P15",
+    "especialidade_buscada": "Clínica geral",
+    "data_hora": "2018-10-23 11:00:00",
+    "descricao": "Consulta para diagnóstico e manejo de diabetes mellitus tipo 2.",
+    "observacao": "Paciente relata fadiga constante e sede excessiva. Exames indicaram glicemia elevada.",
+    "receita_medicamentos": [
+      {
+        "nome": "Metformina",
+        "posologia": "500 mg após o jantar"
+      },
+      {
+        "nome": "Glibenclamida",
+        "posologia": "2,5 mg antes do café da manhã"
+      }
+    ],
+    "convenio": {
+      "nome": "Unimed",
+      "cnpj": "11223344556677",
+      "tempo_carencia": "2 meses",
+      "numero_carteira": "567890123"
+    }
+  },
+  {
+    "_id_consulta": 15,
+    "crm_medico": "SP00003",
+    "id_paciente": "P02",
+    "especialidade_buscada": "Gastroenterologia",
+    "data_hora": "2021-05-17 16:30:00",
+    "descricao": "Consulta para diagnóstico de síndrome do intestino irritável (SII).",
+    "observacao": "Paciente relata dor abdominal difusa, constipação intercalada com episódios de diarreia.",
+    "receita_medicamentos": [
+      {
+        "nome": "Loperamida",
+        "posologia": "1 comprimido após episódios de diarreia"
+      },
+      {
+        "nome": "Probióticos",
+        "posologia": "1 cápsula ao dia"
+      }
+    ],
+    "convenio": {
+      "nome": "Bradesco Saúde",
+      "cnpj": "11122233344455",
+      "tempo_carencia": "2 meses",
+      "numero_carteira": "123987654"
+    }
+  },
+
+  {
+    "_id_consulta": 16,
+    "crm_medico": "SP00004",
+    "id_paciente": "P03",
+    "especialidade_buscada": "Gastroenterologia",
+    "data_hora": "2019-06-10 10:00:00",
+    "descricao": "Consulta para diagnóstico de esteatose hepática.",
+    "observacao": "Paciente relata cansaço constante e exames indicam níveis elevados de enzimas hepáticas.",
+    "receita_medicamentos": [
+      {
+        "nome": "Silimarina",
+        "posologia": "1 cápsula ao dia, após o almoço"
+      },
+      {
+        "nome": "Ácido Ursodesoxicólico",
+        "posologia": "2 cápsulas ao dia, antes das refeições"
+      }
+    ],
+    "convenio": {
+      "nome": "Amil",
+      "cnpj": "98765432111234",
+      "tempo_carencia": "3 meses",
+      "numero_carteira": "987654321"
+    }
+  },
+  {
+    "_id_consulta": 17,
+    "crm_medico": "SP00006",
+    "id_paciente": "P05",
+    "especialidade_buscada": "Dermatologia",
+    "data_hora": "2018-03-27 11:45:00",
+    "descricao": "Consulta para tratamento de vitiligo.",
+    "observacao": "Paciente apresenta manchas brancas em áreas visíveis e busca opções de tratamento para melhorar a qualidade de vida.",
+    "receita_medicamentos": [
+      {
+        "nome": "Tacrolimus",
+        "posologia": "Aplicar 2 vezes ao dia nas áreas afetadas"
+      },
+      {
+        "nome": "Protetor solar FPS 50+",
+        "posologia": "Aplicar diariamente pela manhã"
+      }
+    ],
+    "convenio": {
+      "nome": "SulAmérica Saúde",
+      "cnpj": "96765432000111",
+      "tempo_carencia": "8 meses",
+      "numero_carteira": "123456789"
+    }
+  },
+  {
+    "_id_consulta": 18,
+    "crm_medico": "SP00005",
+    "id_paciente": "P06",
+    "especialidade_buscada": "Clínica geral",
+    "data_hora": "2020-05-12 09:30:00",
+    "descricao": "Consulta para acompanhamento de hipertensão arterial crônica.",
+    "observacao": "Paciente segue tratamento prescrito anteriormente, mas relata dificuldades em manter dieta recomendada.",
+    "receita_medicamentos": [
+      {
+        "nome": "Losartana",
+        "posologia": "50 mg pela manhã"
+      },
+      {
+        "nome": "Amlodipina",
+        "posologia": "5 mg ao dia, antes do jantar"
+      }
+    ],
+    "convenio": {
+      "nome": "Golden Saúde",
+      "cnpj": "12365478000199",
+      "tempo_carencia": "6 meses",
+      "numero_carteira": "987654321"
+    }
+  },
+  {
+    "_id_consulta": 19,
+    "crm_medico": "SP00002",
+    "id_paciente": "P07",
+    "especialidade_buscada": "Pediatria",
+    "data_hora": "2016-08-21 14:00:00",
+    "descricao": "Consulta para tratamento de febre persistente em criança.",
+    "observacao": "Paciente apresenta febre há 3 dias, acompanhada de tosse seca e cansaço.",
+    "receita_medicamentos": [
+      {
+        "nome": "Paracetamol",
+        "posologia": "15 gotas a cada 6 horas, enquanto a febre persistir"
+      },
+      {
+        "nome": "Xarope de Ambroxol",
+        "posologia": "5 ml a cada 12 horas, por 7 dias"
+      }
+    ],
+    "convenio": {
+      "nome": "Bradesco Saúde",
+      "cnpj": "22365432100188",
+      "tempo_carencia": "4 meses",
+      "numero_carteira": "123456780"
+    }
+  },
+  {
+    "_id_consulta": 20,
+    "crm_medico": "SP00011",
+    "id_paciente": "P08",
+    "especialidade_buscada": "Dermatologia",
+    "data_hora": "2021-09-14 16:00:00",
+    "descricao": "Consulta para avaliação de alergia a medicamentos.",
+    "observacao": "Paciente apresenta manchas vermelhas e coceira intensa após uso de antibiótico prescrito anteriormente.",
+    "receita_medicamentos": [
+      {
+        "nome": "Antihistamínico",
+        "posologia": "Tomar 1 comprimido antes de dormir, por 5 dias"
+      },
+      {
+        "nome": "Pomada de Betametasona",
+        "posologia": "Aplicar nas áreas afetadas, 2 vezes ao dia"
+      }
+    ],
+    "convenio": {
+      "nome": "Unimed",
+      "cnpj": "98765432110188",
+      "tempo_carencia": "5 meses",
+      "numero_carteira": "876543210"
+    }
+  },
+  {
+    "_id_consulta": 21,
+    "crm_medico": "SP00004",
+    "id_paciente": "P09",
+    "especialidade_buscada": "Gastroenterologia",
+    "data_hora": "2017-11-22 10:45:00",
+    "descricao": "Consulta para tratamento de constipação crônica.",
+    "observacao": "Paciente relata dificuldade em evacuar, com sintomas que persistem há meses.",
+    "receita_medicamentos": [
+      {
+        "nome": "Lactulose",
+        "posologia": "15 ml ao dia, antes de dormir"
+      },
+      {
+        "nome": "Probióticos",
+        "posologia": "1 cápsula ao dia, pela manhã"
+      }
+    ],
+    "convenio": {
+      "nome": "Amil",
+      "cnpj": "56789012345699",
+      "tempo_carencia": "2 meses",
+      "numero_carteira": "543210987"
+    }
+  }
+]

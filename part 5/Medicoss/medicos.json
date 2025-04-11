@@ -1,0 +1,345 @@
+[
+
+  {
+    "_id_medico": "SP00001",
+    "nome": "DR. João De Almeida",
+    "data_nascimento": "1980-06-16",
+    "especialidades": [
+      "Clínica geral",
+      "Dermatologia"
+    ],
+    "tipo": "Generalista",
+    "contato": [
+      {
+        "telefone": "11 94566-1011",
+        "email": "jaosaude@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "5007699553",
+      "rg": "456789044",
+      "digito": "x",
+      "crm": "SP00001"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00002",
+    "nome": "DRA. Maria Clara Silva",
+    "data_nascimento": "1985-03-22",
+    "especialidades": [
+      "Pediatria"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 93422-7654",
+        "email": "mariaclara@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "5007699554",
+      "rg": "456789045",
+      "digito": "4",
+      "crm": "SP00002"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00003",
+    "nome": "DR. Marcos Aurélio",
+    "data_nascimento": "1990-01-12",
+    "especialidades": [
+      "Gastroenterologia"
+    ],
+    "tipo": "Residente",
+    "contato": [
+      {
+        "telefone": "11 90022-1111",
+        "email": "aureliodoutor@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "2425531092",
+      "rg": "299803456",
+      "digito": "5",
+      "crm": "SP00003"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00004",
+    "nome": "DRA. Vanessa Imperatriz",
+    "data_nascimento": "1980-12-25",
+    "especialidades": [
+      "Gastroenterologia",
+      "Pediatria"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 99987-2525",
+        "email": "vanessaimperatriz02@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "4034455898",
+      "rg": "787065766",
+      "digito": "3",
+      "crm": "SP00004"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00005",
+    "nome": "DR. Albert Einstein",
+    "data_nascimento": "1976-03-20",
+    "especialidades": [
+      "Clínica geral",
+      "Gastroenterologia"
+    ],
+    "tipo": "Generalista",
+    "contato": [
+      {
+        "telefone": "11 91455-0007",
+        "email": "einsteinalbert007@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "4557799032",
+      "rg": "102550612",
+      "digito": "4",
+      "crm": "SP00005"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00006",
+    "nome": "DRA. Márcia Gonçalves",
+    "data_nascimento": "1986-06-25",
+    "especialidades": [
+      "Pediatria",
+      "Dermatologia"
+    ],
+    "tipo": "Generalista",
+    "contato": [
+      {
+        "telefone": "11 91687-6027",
+        "email": "marciagoncalves22@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "1074433217",
+      "rg": "799876432",
+      "digito": "6",
+      "crm": "SP00006"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00007",
+    "nome": "DR. Gabriel Alvez Borges",
+    "data_nascimento": "1970-10-24",
+    "especialidades": [
+      "Dermatologia",
+      "Gastroenterologia"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 92222-9067",
+        "email": "gabssaude@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "5667980235",
+      "rg": "122544678",
+      "digito": "9",
+      "crm": "SP00007"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00008",
+    "nome": "DRA. Carolina Moura",
+    "data_nascimento": "1985-08-10",
+    "especialidades": [
+      "Pediatria",
+      "Clínica geral"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 93456-7788",
+        "email": "carolinamoura@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "2345681200",
+      "rg": "324567891",
+      "digito": "2",
+      "crm": "SP00008"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00009",
+    "nome": "DR. Bruno Cavalcanti",
+    "data_nascimento": "1979-11-22",
+    "especialidades": [
+      "Dermatologia",
+      "Gastroenterologia"
+    ],
+    "tipo": "Residente",
+    "contato": [
+      {
+        "telefone": "11 90012-2233",
+        "email": "brunoneuro@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "2234567890",
+      "rg": "443567891",
+      "digito": "7",
+      "crm": "SP00009"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00010",
+    "nome": "DRA. Helena Ramos",
+    "data_nascimento": "1992-05-13",
+    "especialidades": [
+      "Pediatria",
+      "Clínica geral"
+    ],
+    "tipo": "Residente",
+    "contato": [
+      {
+        "telefone": "11 94567-8890",
+        "email": "helenaramos@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "1123456789",
+      "rg": "224567891",
+      "digito": "5",
+      "crm": "SP00010"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00011",
+    "nome": "DR. Eduardo Lima",
+    "data_nascimento": "1983-03-04",
+    "especialidades": [
+      "Dermatologia"
+    ],
+    "tipo": "Generalista",
+    "contato": [
+      {
+        "telefone": "11 99887-6655",
+        "email": "eduardocirurgiao@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "3345678901",
+      "rg": "113456782",
+      "digito": "8",
+      "crm": "SP00011"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00012",
+    "nome": "DRA. Fernanda Azevedo",
+    "data_nascimento": "1978-02-17",
+    "especialidades": [
+      "Gastroenterologia"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 98765-4321",
+        "email": "fernandaa@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "4456789012",
+      "rg": "567890123",
+      "digito": "3",
+      "crm": "SP00012"
+    }
+  },
+
+
+  {
+    "_id_medico": "SP00013",
+    "nome": "DR. Ricardo Vasconcelos",
+    "data_nascimento": "1990-07-09",
+    "especialidades": [
+      "Clínica geral",
+      "Pediatria"
+    ],
+    "tipo": "Residente",
+    "contato": [
+      {
+        "telefone": "11 90098-1122",
+        "email": "ricardotraumato@hospital.com"
+      }
+    ],
+    "status_medico": 0,
+    "documentos": {
+      "cpf": "5567890123",
+      "rg": "678901234",
+      "digito": "6",
+      "crm": "SP00013"
+    }
+  },
+
+  {
+    "_id_medico": "SP00014",
+    "nome": "DRA. Valéria Do Sete ",
+    "data_nascimento": "1977-07-17",
+    "especialidades": [
+      "Pediatria"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 97777-7777",
+        "email": "valériaseven@hospital.com"
+      }
+    ],
+    "status_medico": 0,
+    "documentos": {
+      "cpf": "7777777777",
+      "rg": "777777777",
+      "digito": "7",
+      "crm": "SP00014"
+    }
+  }
+]
