@@ -318,5 +318,28 @@
       "digito": "6",
       "crm": "SP00013"
     }
+  },
+
+  {
+    "_id_medico": "SP00014",
+    "nome": "DRA. Valéria Do Sete ",
+    "data_nascimento": "1977-07-17",
+    "especialidades": [
+      "Pediatria"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 97777-7777",
+        "email": "valériaseven@hospital.com"
+      }
+    ],
+    "status_medico": 0,
+    "documentos": {
+      "cpf": "7777777777",
+      "rg": "777777777",
+      "digito": "7",
+      "crm": "SP00014"
+    }
   }
 ]
