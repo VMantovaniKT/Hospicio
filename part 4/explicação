@@ -1,4 +1,4 @@
-Como nos médicos, já criei o valor status e adicionei a eles, 1 ou 0, então não preciso fazer essa parte.
-
+Como já criei o valor status e adicionei a eles, 1 ou 0, então não preciso fazer essa parte.
+(tem status nos médicos e pacientes)
  1 = Ativo
  0 = Inativo
