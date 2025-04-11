@@ -317,30 +317,30 @@
   },
 
   {
-  "_id_consulta": 13,
-  "crm_medico": "SP00007",
-  "id_paciente": "P14",
-  "especialidade_buscada": "Dermatologia",
-  "data_hora": "2020-12-05 15:45:00",
-  "descricao": "Consulta para tratamento de psoríase em placas.",
-  "observacao": "Paciente apresenta lesões escamosas em cotovelos e joelhos, com episódios recorrentes.",
-  "receita_medicamentos": [
-    {
-      "nome": "Calcipotriol + Betametasona",
-      "posologia": "Aplicar nas áreas afetadas, 2 vezes ao dia"
-    },
-    {
-      "nome": "Hidratante corporal",
-      "posologia": "Aplicar 3 vezes ao dia"
+    "_id_consulta": 13,
+    "crm_medico": "SP00007",
+    "id_paciente": "P14",
+    "especialidade_buscada": "Dermatologia",
+    "data_hora": "2020-12-05 15:45:00",
+    "descricao": "Consulta para tratamento de psoríase em placas.",
+    "observacao": "Paciente apresenta lesões escamosas em cotovelos e joelhos, com episódios recorrentes.",
+    "receita_medicamentos": [
+      {
+        "nome": "Calcipotriol + Betametasona",
+        "posologia": "Aplicar nas áreas afetadas, 2 vezes ao dia"
+      },
+      {
+        "nome": "Hidratante corporal",
+        "posologia": "Aplicar 3 vezes ao dia"
+      }
+    ],
+    "convenio": {
+      "nome": "SulAmérica Saúde",
+      "cnpj": "33445566778899",
+      "tempo_carencia": "3 meses",
+      "numero_carteira": "123456789"
     }
-  ],
-  "convenio": {
-    "nome": "SulAmérica Saúde",
-    "cnpj": "33445566778899",
-    "tempo_carencia": "3 meses",
-    "numero_carteira": "123456789"
-  }
-},
+  },
   {
     "_id_consulta": 14,
     "crm_medico": "SP00005",
@@ -543,5 +543,3 @@
     }
   }
 ]
-
-
