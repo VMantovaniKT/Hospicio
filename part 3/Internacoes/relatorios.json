@@ -11,5 +11,101 @@
     "leito": "quarto duplo",
     "valor_diaria": "R$200,00",
     "descricao_internacao": ["O paciente chegou com o rosto muito inchado e com dificuldades para respirar após ser picado por um enxame de abelhas. Realizamos os procedimentos, administramos a medicação e deixamos o paciente em repouso até pela manhã, onde observamos melhora e concedemos alta. "]
+  },
+
+  {
+    "_id_consulta": 5,
+    "_id_paciente": "P06",
+    "_id_medico": "SP00012",
+    "_id_enfermeiro": ["E02", "E07"],
+    "data_entrada": "2016-09-23 09:30:00",
+    "previsao_alta": true,
+    "previsao_alta_data": "2016-09-26 10:00:00",
+    "data_saida": "2016-09-25 18:00:00",
+    "leito": "apartamento",
+    "valor_diaria": "R$500,00",
+    "descricao_internacao": [
+      "Paciente apresentava azia constante, regurgitação e perda de apetite. Foi realizado tratamento para complicações do refluxo gástrico, com melhora significativa após o terceiro dia."
+    ]
+  },
+
+  {
+    "_id_consulta": 7,
+    "_id_paciente": "P08",
+    "_id_medico": "SP00011",
+    "_id_enfermeiro": ["E01", "E09"],
+    "data_entrada": "2020-08-18 14:00:00",
+    "previsao_alta": true,
+    "previsao_alta_data": "2020-08-20 09:00:00",
+    "data_saida": "2020-08-19 15:00:00",
+    "leito": "enfermaria",
+    "valor_diaria": "R$150,00",
+    "descricao_internacao": [
+      "Paciente apresentava cicatrizes recentes e surtos ativos de acne cística severa. Recebeu tratamento e foi orientado a continuar acompanhamento dermatológico."
+    ]
+  },
+
+  {
+    "_id_consulta": 10,
+    "_id_paciente": "P11",
+    "_id_medico": "SP00005",
+    "_id_enfermeiro": ["E06", "E04"],
+    "data_entrada": "2017-03-14 09:30:00",
+    "previsao_alta": true,
+    "previsao_alta_data": "2017-03-15 12:00:00",
+    "data_saida": "2017-03-15 10:00:00",
+    "leito": "apartamento",
+    "valor_diaria": "R$500,00",
+    "descricao_internacao": [
+      "Paciente foi internado para monitoramento da hipertensão arterial, com ajustes nos medicamentos prescritos e orientação nutricional para controle da condição."
+    ]
+  },
+
+  {
+    "_id_consulta": 13,
+    "_id_paciente": "P14",
+    "_id_medico": "SP00007",
+    "_id_enfermeiro": ["E02", "E10"],
+    "data_entrada": "2020-12-05 15:45:00",
+    "previsao_alta": true,
+    "previsao_alta_data": "2020-12-07 08:00:00",
+    "data_saida": "2020-12-06 17:00:00",
+    "leito": "quarto duplo",
+    "valor_diaria": "R$300,00",
+    "descricao_internacao": [
+      "Paciente apresenta lesões escamosas em cotovelos e joelhos devido a psoríase. Tratamento tópico foi aplicado e houve melhora na resposta inflamatória."
+    ]
+  },
+
+  {
+    "_id_consulta": 14,
+    "_id_paciente": "P15",
+    "_id_medico": "SP00005",
+    "_id_enfermeiro": ["E03", "E08"],
+    "data_entrada": "2018-10-23 11:00:00",
+    "previsao_alta": false,
+    "previsao_alta_data": "",
+    "data_saida": "2018-10-24 13:00:00",
+    "leito": "enfermaria",
+    "valor_diaria": "R$150,00",
+    "descricao_internacao": [
+      "Paciente foi admitido para monitoramento de diabetes mellitus tipo 2. Ajustes na terapia medicamentosa e educação em saúde foram realizados."
+    ]
+  },
+
+  {
+    "_id_consulta": 16,
+    "_id_paciente": "P03",
+    "_id_medico": "SP00004",
+    "_id_enfermeiro": ["E09", "E01"],
+    "data_entrada": "2019-06-10 10:00:00",
+    "previsao_alta": false,
+    "previsao_alta_data": "",
+    "data_saida": "2019-06-11 16:00:00",
+    "leito": "quarto duplo",
+    "valor_diaria": "R$300,00",
+    "descricao_internacao": [
+      "Paciente relatou cansaço constante devido à esteatose hepática. Recebeu suporte nutricional e medicamentos para redução de enzimas hepáticas."
+    ]
   }
 ]
