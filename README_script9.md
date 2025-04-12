@@ -1,4 +1,4 @@
-# 🩺 Relatório de Consultas por Médico no MongoDB ( *Usar script no arquivo "Consultas" * )
+# 🩺 Relatório de Consultas por Médico no MongoDB ( *Usar script no arquivo "Consultas"* )
 
 Este projeto contém um script em **MongoDB Aggregation Framework** que gera um relatório detalhado de consultas realizadas por médicos, agrupando dados e juntando informações adicionais, como especialidades e status do médico.
 
