@@ -1,4 +1,4 @@
-# 🩺 Listagem de Internações em Enfermarias por Gastroenterologistas ( *Usar o script no arquivo "internacoes" * )
+# 🩺 Listagem de Internações em Enfermarias por Gastroenterologistas ( *Usar o script no arquivo "internacoes"* )
 
 Este projeto contém um script em **MongoDB Aggregation Framework** que busca internações realizadas em enfermarias por médicos especializados em gastroenterologia. Ele combina informações das coleções `Internacoes`, `Medicos` e `Pacientes` para apresentar detalhes organizados de forma clara.
 
